@@ -34,7 +34,7 @@ void buttons_init()
 {
 	PORTC |= BUTTON_MASK;
 	PUEC |= BUTTON_MASK;
-	DDRA &= ~BUTTON_MASK;
+	DDRC &= ~BUTTON_MASK;
 	
 	PCMSK2 |= (1<<PCINT17) | (1<<PCINT16) | (1<<PCINT14);
 	GIMSK |= (1<<PCIE2);
